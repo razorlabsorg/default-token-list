@@ -1,0 +1,22 @@
+{
+  "name": "@razorlabs/default-token-list",
+  "version": "1.0.0",
+  "description": "Razor DEX default token list",
+  "main": "build/razor-default.tokenlist.json",
+  "scripts": {
+    "test": "mocha",
+    "build": "rimraf build && mkdir -p build && node src/write.js > build/razor-default.tokenlist.json",
+    "prepublishOnly": "pnpm test && pnpm build"
+  },
+  "files": [
+    "build/razor-default.tokenlist.json"
+  ],
+  "keywords": [
+    "razor",
+    "default",
+    "token",
+    "list"
+  ],
+  "author": "",
+  "license": "GPL-3.0-or-later"
+}
